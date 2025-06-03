@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<input type="text" required id="name" placeholder="Name"/>
-	<input type="email" required id="email" placeholder="Email"/>
-	<input type="radio" required name="gender" id="gender_m" value="male"/>
-	<input type="radio" required name="gender" id="gender_f" value="female"/>
-	<select required id="cars" >
-		<option disabled selected>--Please choose an option--</option>
-		<option>first</option>
-		<option>second</option>
-		<option>third</option>
-	</select>	
-	<input type="Number" required id="age" placeholder="Age"/>
-	<input type="date" required id="dob" placeholder="age"/>
-    <input type="tel" id="tel" placeholder="xxx-xxx-xxxx"/>
-	<input type="password" required id="password" placeholder="Password"/>
-	<input type="checkbox" required id="tos" />
-	<script type="text/javascript" src="./script.js">
-</script>
 
+  <form>
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" required id="name" placeholder="Name" /><br /><br />
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" required id="email" placeholder="Email" /><br /><br />
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" required name="gender" id="gender_m" value="male" />
+    <label for="gender_m">Male</label>
+    <input type="radio" required name="gender" id="gender_f" value="female" />
+    <label for="gender_f">Female</label><br /><br />
+
+    <!-- Select with Placeholder -->
+    <label for="cars">Select an option:</label>
+    <select required id="cars">
+      <option value="" disabled selected>--Please choose an option--</option>
+      <option value="first">First</option>
+      <option value="second">Second</option>
+      <option value="third">Third</option>
+    </select><br /><br />
+
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number" required id="age" placeholder="Age" /><br /><br />
+
+    <!-- DOB -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" required id="dob" /><br /><br />
+
+    <!-- Phone -->
+    <label for="tel">Phone:</label>
+    <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" /><br /><br />
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" required id="password" placeholder="Password" /><br /><br />
+
+    <!-- Terms Checkbox -->
+    <label>
+      <input type="checkbox" required id="tos" />
+      I agree to the terms of service
+    </label><br /><br />
+
+    <!-- Submit -->
+    <input type="submit" value="Submit" />
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
