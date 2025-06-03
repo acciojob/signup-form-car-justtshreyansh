@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  <form>
+  <form method="post">
     <!-- Name -->
     <label for="name">Name:</label>
     <input type="text" required id="name" placeholder="Name" /><br /><br />
@@ -47,13 +47,15 @@
     <input type="password" required id="password" placeholder="Password" /><br /><br />
 
     <!-- Terms Checkbox -->
-    <label>
-      <input type="checkbox" required id="tos" />
+    <label for="tos">
+      
       I agree to the terms of service
-    </label><br /><br />
+    </label>
+	  <input type="checkbox" required id="tos" />
+	  <br /><br />
 
     <!-- Submit -->
-    <input type="submit" value="Submit" />
+    <button type="submit"  >Submit</button>
   </form>
 
   <script type="text/javascript" src="./script.js"></script>
